@@ -17,8 +17,8 @@ class ViewController: NSViewController {
         let responder = Responder(text: tweet);
         let response = responder.respond();
         responseField.stringValue = response;
-        
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,7 +30,5 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
-
 }
 

@@ -1,15 +1,28 @@
 import Foundation
 
 public struct Twitter {
-    public let user: User
+    public var user: User
+    public let favoriteCounter: FavoriteCounterProtocol
     
+    public init(user: User, favoriteCounter: FavoriteCounterProtocol) {
+        self.user = user
+        self.favoriteCounter = favoriteCounter
+    }
+
     public init(user: User) {
         self.user = user
+        self.favoriteCounter = FavoriteCounter()
     }
-    
-    public func tweet(text: String) -> TweetResponse {
-        let response = TweetResponse(favoriteCount: 0, retweetCount: 0)
-    
-        return response
+
+    public func tweet(text: String) {
+        let favoriteCount = favoriteCounter.count(user.followerCount)
+
+        if favoriteCount >= favoritesRequiredForNewFollower() {
+            user.addFollower()
+        }
+    }
+
+    public func favoritesRequiredForNewFollower() -> Int {
+        return 1
     }
 }

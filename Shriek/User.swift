@@ -1,9 +1,13 @@
 import Foundation
 
-public struct User {
-    public let followerCount: Int
+public class User {
+    public var followerCount: Int
     
     public init() {
-        self.followerCount = 0
+        self.followerCount = 2
+    }
+
+    public func addFollower() {
+        self.followerCount = followerCount + 1
     }
 }

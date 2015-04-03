@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002719211ACF34B700749C2B /* FavoriteCounterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002719201ACF34B700749C2B /* FavoriteCounterSpec.swift */; };
+		002719231ACF352B00749C2B /* FavoriteCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002719221ACF352B00749C2B /* FavoriteCounter.swift */; };
+		002719251ACF3AF300749C2B /* FavoriteCounterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002719241ACF3AF300749C2B /* FavoriteCounterProtocol.swift */; };
 		006C10DF1ACEE10500DD0C19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006C10DE1ACEE10500DD0C19 /* AppDelegate.swift */; };
 		006C10E11ACEE10500DD0C19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006C10E01ACEE10500DD0C19 /* ViewController.swift */; };
 		006C10E31ACEE10500DD0C19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 006C10E21ACEE10500DD0C19 /* Images.xcassets */; };
@@ -49,6 +52,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		002719201ACF34B700749C2B /* FavoriteCounterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCounterSpec.swift; sourceTree = "<group>"; };
+		002719221ACF352B00749C2B /* FavoriteCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCounter.swift; sourceTree = "<group>"; };
+		002719241ACF3AF300749C2B /* FavoriteCounterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCounterProtocol.swift; sourceTree = "<group>"; };
 		006C10D91ACEE10500DD0C19 /* Shriek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shriek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		006C10DD1ACEE10500DD0C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		006C10DE1ACEE10500DD0C19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,7 +123,9 @@
 				006C10DC1ACEE10500DD0C19 /* Supporting Files */,
 				006C10FB1ACEE27D00DD0C19 /* Responder.swift */,
 				00E678CA1ACF1081002EF6EA /* Twitter.swift */,
+				002719221ACF352B00749C2B /* FavoriteCounter.swift */,
 				00E678CC1ACF10F3002EF6EA /* TweetResponse.swift */,
+				002719241ACF3AF300749C2B /* FavoriteCounterProtocol.swift */,
 				00E678C81ACF0B99002EF6EA /* User.swift */,
 			);
 			path = Shriek;
@@ -139,6 +147,7 @@
 				006C10EF1ACEE10500DD0C19 /* Supporting Files */,
 				00A495871ACEFA8D00DD4F8F /* ResponderSpec.swift */,
 				00E678C61ACF0B4E002EF6EA /* TwitterSpec.swift */,
+				002719201ACF34B700749C2B /* FavoriteCounterSpec.swift */,
 			);
 			path = ShriekTests;
 			sourceTree = "<group>";
@@ -243,8 +252,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002719231ACF352B00749C2B /* FavoriteCounter.swift in Sources */,
 				00E678CF1ACF24BA002EF6EA /* UserViewController.swift in Sources */,
 				00E678C91ACF0B99002EF6EA /* User.swift in Sources */,
+				002719251ACF3AF300749C2B /* FavoriteCounterProtocol.swift in Sources */,
 				006C10E11ACEE10500DD0C19 /* ViewController.swift in Sources */,
 				00E678CD1ACF10F3002EF6EA /* TweetResponse.swift in Sources */,
 				00E678CB1ACF1081002EF6EA /* Twitter.swift in Sources */,
@@ -259,6 +270,7 @@
 			files = (
 				00A495881ACEFA8D00DD4F8F /* ResponderSpec.swift in Sources */,
 				00E678C71ACF0B4E002EF6EA /* TwitterSpec.swift in Sources */,
+				002719211ACF34B700749C2B /* FavoriteCounterSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

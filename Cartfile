@@ -1,0 +1,3 @@
+# Tests
+github "Quick/Quick" == 0.2.3
+github "Quick/Nimble" ~> 0.3.0

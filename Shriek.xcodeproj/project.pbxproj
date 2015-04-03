@@ -11,8 +11,12 @@
 		006C10E11ACEE10500DD0C19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006C10E01ACEE10500DD0C19 /* ViewController.swift */; };
 		006C10E31ACEE10500DD0C19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 006C10E21ACEE10500DD0C19 /* Images.xcassets */; };
 		006C10E61ACEE10500DD0C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006C10E41ACEE10500DD0C19 /* Main.storyboard */; };
-		006C10F21ACEE10500DD0C19 /* ShriekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006C10F11ACEE10500DD0C19 /* ShriekTests.swift */; };
 		006C10FC1ACEE27D00DD0C19 /* Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006C10FB1ACEE27D00DD0C19 /* Responder.swift */; };
+		006C10FF1ACEF9F800DD0C19 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006C10FD1ACEF9F800DD0C19 /* Nimble.framework */; };
+		006C11001ACEF9F800DD0C19 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006C10FE1ACEF9F800DD0C19 /* Quick.framework */; };
+		00A495881ACEFA8D00DD4F8F /* ResponderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A495871ACEFA8D00DD4F8F /* ResponderSpec.swift */; };
+		00A4958B1ACEFC4C00DD4F8F /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 006C10FD1ACEF9F800DD0C19 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		00A4958C1ACEFC4C00DD4F8F /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 006C10FE1ACEF9F800DD0C19 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +29,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		00A4958A1ACEFC4300DD4F8F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				00A4958B1ACEFC4C00DD4F8F /* Nimble.framework in CopyFiles */,
+				00A4958C1ACEFC4C00DD4F8F /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		006C10D91ACEE10500DD0C19 /* Shriek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shriek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		006C10DD1ACEE10500DD0C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,8 +52,10 @@
 		006C10E51ACEE10500DD0C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		006C10EB1ACEE10500DD0C19 /* ShriekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShriekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		006C10F01ACEE10500DD0C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		006C10F11ACEE10500DD0C19 /* ShriekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShriekTests.swift; sourceTree = "<group>"; };
 		006C10FB1ACEE27D00DD0C19 /* Responder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responder.swift; sourceTree = "<group>"; };
+		006C10FD1ACEF9F800DD0C19 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = SOURCE_ROOT; };
+		006C10FE1ACEF9F800DD0C19 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = SOURCE_ROOT; };
+		00A495871ACEFA8D00DD4F8F /* ResponderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponderSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				006C11001ACEF9F800DD0C19 /* Quick.framework in Frameworks */,
+				006C10FF1ACEF9F800DD0C19 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,8 +120,10 @@
 		006C10EE1ACEE10500DD0C19 /* ShriekTests */ = {
 			isa = PBXGroup;
 			children = (
-				006C10F11ACEE10500DD0C19 /* ShriekTests.swift */,
+				006C10FD1ACEF9F800DD0C19 /* Nimble.framework */,
+				006C10FE1ACEF9F800DD0C19 /* Quick.framework */,
 				006C10EF1ACEE10500DD0C19 /* Supporting Files */,
+				00A495871ACEFA8D00DD4F8F /* ResponderSpec.swift */,
 			);
 			path = ShriekTests;
 			sourceTree = "<group>";
@@ -138,7 +162,7 @@
 			buildPhases = (
 				006C10E71ACEE10500DD0C19 /* Sources */,
 				006C10E81ACEE10500DD0C19 /* Frameworks */,
-				006C10E91ACEE10500DD0C19 /* Resources */,
+				00A4958A1ACEFC4300DD4F8F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -197,13 +221,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		006C10E91ACEE10500DD0C19 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -221,7 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				006C10F21ACEE10500DD0C19 /* ShriekTests.swift in Sources */,
+				00A495881ACEFA8D00DD4F8F /* ResponderSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,10 +367,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -362,6 +381,7 @@
 				INFOPLIST_FILE = ShriekTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shriek.app/Contents/MacOS/Shriek";
 			};
 			name = Debug;
@@ -370,10 +390,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = ShriekTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -401,6 +423,7 @@
 				006C10F71ACEE10500DD0C19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		006C10F81ACEE10500DD0C19 /* Build configuration list for PBXNativeTarget "ShriekTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +432,7 @@
 				006C10FA1ACEE10500DD0C19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

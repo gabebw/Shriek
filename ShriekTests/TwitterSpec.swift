@@ -21,7 +21,7 @@ class TwitterSpec: QuickSpec {
                 let mockFavoriteCounter = MockFavoriteCounter(favoriteCount: 1)
                 let user = User()
                 let oldFollowerCount = user.followerCount
-                let twitter = Twitter(user: user, favoriteCounter: mockFavoriteCounter)
+                var twitter = Twitter(user: user, favoriteCounter: mockFavoriteCounter)
 
                 twitter.tweet("whatever")
 

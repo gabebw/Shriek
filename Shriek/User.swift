@@ -2,7 +2,7 @@ import Foundation
 
 public class User {
     public var followerCount: Int
-    
+
     public init() {
         self.followerCount = 2
     }

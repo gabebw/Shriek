@@ -23,6 +23,6 @@ public struct Twitter {
     }
 
     public func favoritesRequiredForNewFollower() -> Int {
-        return 1
+        return user.followerCount/3
     }
 }

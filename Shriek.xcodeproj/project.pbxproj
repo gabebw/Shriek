@@ -14,7 +14,6 @@
 		006C10E11ACEE10500DD0C19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006C10E01ACEE10500DD0C19 /* ViewController.swift */; };
 		006C10E31ACEE10500DD0C19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 006C10E21ACEE10500DD0C19 /* Images.xcassets */; };
 		006C10E61ACEE10500DD0C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006C10E41ACEE10500DD0C19 /* Main.storyboard */; };
-		006C10FC1ACEE27D00DD0C19 /* Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006C10FB1ACEE27D00DD0C19 /* Responder.swift */; };
 		006C10FF1ACEF9F800DD0C19 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006C10FD1ACEF9F800DD0C19 /* Nimble.framework */; };
 		006C11001ACEF9F800DD0C19 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006C10FE1ACEF9F800DD0C19 /* Quick.framework */; };
 		00A495881ACEFA8D00DD4F8F /* ResponderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A495871ACEFA8D00DD4F8F /* ResponderSpec.swift */; };
@@ -23,7 +22,6 @@
 		00E678C71ACF0B4E002EF6EA /* TwitterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E678C61ACF0B4E002EF6EA /* TwitterSpec.swift */; };
 		00E678C91ACF0B99002EF6EA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E678C81ACF0B99002EF6EA /* User.swift */; };
 		00E678CB1ACF1081002EF6EA /* Twitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E678CA1ACF1081002EF6EA /* Twitter.swift */; };
-		00E678CD1ACF10F3002EF6EA /* TweetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E678CC1ACF10F3002EF6EA /* TweetResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,14 +60,12 @@
 		006C10E51ACEE10500DD0C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		006C10EB1ACEE10500DD0C19 /* ShriekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShriekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		006C10F01ACEE10500DD0C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		006C10FB1ACEE27D00DD0C19 /* Responder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Responder.swift; sourceTree = "<group>"; };
 		006C10FD1ACEF9F800DD0C19 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/Mac/Nimble.framework; sourceTree = SOURCE_ROOT; };
 		006C10FE1ACEF9F800DD0C19 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = SOURCE_ROOT; };
 		00A495871ACEFA8D00DD4F8F /* ResponderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponderSpec.swift; sourceTree = "<group>"; };
 		00E678C61ACF0B4E002EF6EA /* TwitterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterSpec.swift; sourceTree = "<group>"; };
 		00E678C81ACF0B99002EF6EA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		00E678CA1ACF1081002EF6EA /* Twitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Twitter.swift; sourceTree = "<group>"; };
-		00E678CC1ACF10F3002EF6EA /* TweetResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,10 +114,8 @@
 				006C10E21ACEE10500DD0C19 /* Images.xcassets */,
 				006C10E41ACEE10500DD0C19 /* Main.storyboard */,
 				006C10DC1ACEE10500DD0C19 /* Supporting Files */,
-				006C10FB1ACEE27D00DD0C19 /* Responder.swift */,
 				00E678CA1ACF1081002EF6EA /* Twitter.swift */,
 				002719221ACF352B00749C2B /* FavoriteCounter.swift */,
-				00E678CC1ACF10F3002EF6EA /* TweetResponse.swift */,
 				002719241ACF3AF300749C2B /* FavoriteCounterProtocol.swift */,
 				00E678C81ACF0B99002EF6EA /* User.swift */,
 			);
@@ -253,10 +247,8 @@
 				00E678C91ACF0B99002EF6EA /* User.swift in Sources */,
 				002719251ACF3AF300749C2B /* FavoriteCounterProtocol.swift in Sources */,
 				006C10E11ACEE10500DD0C19 /* ViewController.swift in Sources */,
-				00E678CD1ACF10F3002EF6EA /* TweetResponse.swift in Sources */,
 				00E678CB1ACF1081002EF6EA /* Twitter.swift in Sources */,
 				006C10DF1ACEE10500DD0C19 /* AppDelegate.swift in Sources */,
-				006C10FC1ACEE27D00DD0C19 /* Responder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

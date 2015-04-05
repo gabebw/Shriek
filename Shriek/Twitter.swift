@@ -14,11 +14,14 @@ public struct Twitter {
         self.favoriteCounter = FavoriteCounter()
     }
 
-    public func tweet(text: String) {
+    public func tweet(text: String) -> String {
         let favoriteCount = favoriteCounter.count(user.followerCount)
 
         if favoriteCount >= favoritesRequiredForNewFollower() {
             user.addFollower()
+            return "You got enough favorites to add a follower!"
+        } else {
+            return "Your tweet was not popular. Like, at all. Try again."
         }
     }
 

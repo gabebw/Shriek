@@ -17,8 +17,10 @@ class ViewController: NSViewController {
 
     @IBAction func tweet(sender: NSButton) {
         let tweetText = tweetField.stringValue
-        twitter.tweet(tweetText)
+
+        let response = twitter.tweet(tweetText)
 
         followerLabel.stringValue = "\(user.followerCount ?? 0) followers"
+        responseField.stringValue = response
     }
 }

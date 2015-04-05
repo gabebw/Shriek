@@ -24,7 +24,6 @@
 		00E678C91ACF0B99002EF6EA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E678C81ACF0B99002EF6EA /* User.swift */; };
 		00E678CB1ACF1081002EF6EA /* Twitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E678CA1ACF1081002EF6EA /* Twitter.swift */; };
 		00E678CD1ACF10F3002EF6EA /* TweetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E678CC1ACF10F3002EF6EA /* TweetResponse.swift */; };
-		00E678CF1ACF24BA002EF6EA /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E678CE1ACF24BA002EF6EA /* UserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +70,6 @@
 		00E678C81ACF0B99002EF6EA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		00E678CA1ACF1081002EF6EA /* Twitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Twitter.swift; sourceTree = "<group>"; };
 		00E678CC1ACF10F3002EF6EA /* TweetResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetResponse.swift; sourceTree = "<group>"; };
-		00E678CE1ACF24BA002EF6EA /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				006C10DE1ACEE10500DD0C19 /* AppDelegate.swift */,
-				00E678CE1ACF24BA002EF6EA /* UserViewController.swift */,
 				006C10E01ACEE10500DD0C19 /* ViewController.swift */,
 				006C10E21ACEE10500DD0C19 /* Images.xcassets */,
 				006C10E41ACEE10500DD0C19 /* Main.storyboard */,
@@ -253,7 +250,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				002719231ACF352B00749C2B /* FavoriteCounter.swift in Sources */,
-				00E678CF1ACF24BA002EF6EA /* UserViewController.swift in Sources */,
 				00E678C91ACF0B99002EF6EA /* User.swift in Sources */,
 				002719251ACF3AF300749C2B /* FavoriteCounterProtocol.swift in Sources */,
 				006C10E11ACEE10500DD0C19 /* ViewController.swift in Sources */,

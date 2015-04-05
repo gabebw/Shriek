@@ -5,16 +5,13 @@ import Shriek
 class FavoriteCounterSpec: QuickSpec {
     override func spec() {
         describe("#count") {
-            it("is always 1/2 of followers right now") {
+            it("is a number between  1 - 50% of followers") {
                 let counter = FavoriteCounter()
 
-                expect(counter.count(10)).to(equal(5))
-            }
+                let count = counter.count(10)
 
-            it("rounds up") {
-                let counter = FavoriteCounter()
-
-                expect(counter.count(3)).to(equal(2))
+                expect(count) > Int(0)
+                expect(count) <= Int(5)
             }
         }
     }

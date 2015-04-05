@@ -5,6 +5,9 @@ public struct FavoriteCounter: FavoriteCounterProtocol {
     }
 
     public func count(followerCount: Int) -> Int {
-        return Int(round(Double(followerCount)/2.0))
+        // Up to 50% of a user's followers might fav a tweet
+        let maximum = UInt32(round(Double(followerCount)/2.0))
+
+        return Int(arc4random_uniform(maximum)) + 1
     }
 }

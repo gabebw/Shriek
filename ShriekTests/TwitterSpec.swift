@@ -19,13 +19,12 @@ class TwitterSpec: QuickSpec {
         describe("#tweet") {
             it("adds a follower if the tweet got at least 1 favorite") {
                 let mockFavoriteCounter = MockFavoriteCounter(favoriteCount: 1)
-                let user = User()
-                let oldFollowerCount = user.followerCount
-                var twitter = Twitter(user: user, favoriteCounter: mockFavoriteCounter)
+                var twitter = Twitter(favoriteCounter: mockFavoriteCounter)
+                let oldFollowerCount = twitter.user.followerCount
 
                 twitter.tweet("whatever")
 
-                expect(user.followerCount).to(equal(oldFollowerCount + 1))
+                expect(twitter.user.followerCount).to(equal(oldFollowerCount + 1))
             }
         }
     }

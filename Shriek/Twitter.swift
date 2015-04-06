@@ -5,14 +5,9 @@ public struct Twitter {
     var tweets: [String] = []
     public let favoriteCounter: FavoriteCounterProtocol
     
-    public init(user: User, favoriteCounter: FavoriteCounterProtocol) {
-        self.user = user
+    public init(favoriteCounter: FavoriteCounterProtocol) {
+        self.user = User()
         self.favoriteCounter = favoriteCounter
-    }
-
-    public init(user: User) {
-        self.user = user
-        self.favoriteCounter = FavoriteCounter()
     }
 
     public mutating func tweet(text: String) -> String {

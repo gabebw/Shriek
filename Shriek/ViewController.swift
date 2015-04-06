@@ -5,22 +5,14 @@ class ViewController: NSViewController {
     @IBOutlet weak var responseField: NSTextField!
     @IBOutlet weak var followerLabel: NSTextField!
     
-    var user: User
-    var twitter: Twitter
-
-    required init?(coder: NSCoder) {
-        self.user = User()
-        self.twitter = Twitter(user: user)
-
-        super.init(coder: coder)
-    }
+    var twitter = Twitter(favoriteCounter: FavoriteCounter())
 
     @IBAction func tweet(sender: NSButton) {
         let tweetText = tweetField.stringValue
 
         let response = twitter.tweet(tweetText)
 
-        followerLabel.stringValue = "\(user.followerCount ?? 0) followers"
+        followerLabel.stringValue = "\(twitter.user.followerCount ?? 0) followers"
         responseField.stringValue = response
     }
 }
